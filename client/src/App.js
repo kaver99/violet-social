@@ -45,7 +45,7 @@ function App() {
 			<Provider store={store}>
 				<ThemeProvider theme={theme}>
 				<CssBaseline />
-				<GridLayout />
+				<GridLayout  style={{backgroundColor: '#FAFAFA'}}/>
 				</ThemeProvider>
 			</Provider>
 		</ApolloProvider>

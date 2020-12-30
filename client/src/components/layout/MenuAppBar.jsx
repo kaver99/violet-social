@@ -6,15 +6,16 @@ import { StyleLink } from '../common/common';
 
 export const StyleAppBar = withStyles((theme) => ({
   root: {
-    maxWidth: '768px',
+    maxWidth: '1280px',
     width: '100%',
+    height: '80px',
     left: 0,
     right: 0,
     marginLeft: 'auto',
     marginRight: 'auto',
     border: '1px solid rgba(0,0,0,.08)',
     boxShadow: 'none',
-    backgroundColor: '#FAFAFA',
+    backgroundColor: '#FFF',
   },
 }))(AppBar);
 

@@ -1,17 +1,7 @@
 import React from 'react';
 import { withStyles, makeStyles, Container, Box } from '@material-ui/core';
 
-
-const PaperImgBox = withStyles((theme) => ({
-	root: {
-		width: '100%',
-		height: '300px',
-		backgroundColor: 'transparent',
-		backgroundRepeat: 'no-repeat',
-		backgroundSize: 'cover',
-		backgroundPosition: 'center',
-	}
-}))(Box);
+import CarouselPaper from './carousel/CarouselPaper';
 
 const StyleBox = withStyles((theme) => ({
 	root: {
@@ -28,17 +18,21 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
+const SLIDE_INFO = [
+	{ imgUrl: "/static/images/burberry1.jpg", imgTitle: "BURBERRY" },
+	{ imgUrl: "/static/images/CHANEL1.jpg", imgTitle: "CHANEL" },
+	{ imgUrl: "/static/images/burberry1.jpg", imgTitle: "PAPER3" },
+];
+
+
 export default function IndexComponent() {
 	const classes = useStyles();
-
-	const paper1 = "/static/images/burberry1.jpg";
+	// paper image setter
+	const slideInfo = SLIDE_INFO;
 
 	return (
 		<Box className={classes.root}>
-			<Box>
-				<PaperImgBox style={{backgroundImage: `url(${paper1})`}}></PaperImgBox>
-				PAPER
-			</Box>
+			<CarouselPaper slideInfo={slideInfo}></CarouselPaper>
 			<Container className={classes.container}>
 				<StyleBox>카테고리 MENU</StyleBox>
 				<StyleBox>Tag별 카테고리1</StyleBox>

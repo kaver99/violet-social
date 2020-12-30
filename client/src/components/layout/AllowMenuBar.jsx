@@ -24,7 +24,7 @@ export const MenuBox = withStyles((theme) => ({
 		left: '0',
 		right: '0',
 		boxShadow: '2px 6px 8px 3px rgba(0, 0, 0, .08)',
-		backgroundColor: '#fff',
+		backgroundColor: '#FFF',
 		zIndex: 999,
 	},
 }))(Box);

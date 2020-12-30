@@ -8,7 +8,7 @@ import { StyleLink } from '../common/common';
 const useStyles = makeStyles((theme) => ({
   root: {
     borderTop: '1px solid rgba(0,0,0,0.08)',
-    backgroundColor: 'rgba(0,0,0,0.04)',
+    backgroundColor: '#FFF',
     textAlign: 'center',
     padding: '5vh 0',
     marginTop: '20px',

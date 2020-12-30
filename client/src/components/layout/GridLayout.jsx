@@ -33,14 +33,14 @@ const ContentBox = withStyles((theme) => ({
 		right: 0,
 		width: '100%',
 		position: 'absolute',
-		maxWidth: '768px',
+		maxWidth: '1280px',
 		//minHeight: '100vh',
 		flexGrow: 1,
 		border: '1px solid rgba(0,0,0,.08)',
-		padding: '49px 0 0 0 !important',
+		padding: '79px 0 0 0 !important',
 		marginLeft: 'auto',
 		marginRight: 'auto',
-		backgroundColor: '#FAFAFA',
+		backgroundColor: '#FFF',
 	}
 }))(Box);
 
