@@ -1,0 +1,11 @@
+.vscode
+
+# common
+/node_modules
+
+# server
+/server/node_modules
+
+
+# client
+/client/node_modules
